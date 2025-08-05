@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter firstname: ");
+        String firstname = sc.nextLine();
+        
+       
+        System.out.println("Enter surname: ");
+        String surname = sc.nextLine(); 
+
+        System.out.println("Enter age: ");
+        int age = sc.nextInt();
+        
+        System.out.println("Enter sprno: ");
+        short sprno = sc.nextShort();
+
+        System.out.println("Enter sex (true for female, false for male): ");
+        boolean sex = sc.nextBoolean();
+        
+        if (sex) {
+            System.out.println("female:true");
+        } else {
+            System.out.println("Male:false");
+        }
+        System.out.println("Enter height: ");
+        float height = sc.nextFloat();  
+
+        System.out.println("Enter salary: ");
+        double salary = sc.nextDouble();  
+
+        System.out.println("Enter mobileno: ");
+        int mobileno = sc.nextInt(); 
+
+        
+        sc.close();
+        
+    
+        System.out.println("\nEntered Details:");
+        System.out.println("First Name: " + firstname);
+        System.out.println("Surname: " + surname);
+        System.out.println("Age: " + age);
+        System.out.println("SPR Number: " + sprno);
+        System.out.println("Sex: " + sex);
+        System.out.println("Height: " + height);
+        System.out.println("Salary: " + salary);
+        System.out.println("Mobile Number: " + mobileno);
+    }
+}
