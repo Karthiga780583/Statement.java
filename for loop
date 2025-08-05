@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+        System.out.print("Enter number: ");
+        int number = data.nextInt();
+
+        for (int i = number; i >= 0; i--) {
+            if (i == 5) {
+                break; // stops the loop completely
+            } else if (i == 3) {
+                continue; // skips this iteration
+            }
+            System.out.print(i + " ");
+        }
+
+        data.close();
+    }
+}
