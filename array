@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter the number of elements:");
+        int size = x.nextInt();
+
+        int[] array = new int[size];  
+
+        System.out.println("Enter the elements:");
+        for (int i = 0; i < size; i++) {
+            array[i] = x.nextInt();
+        }
+
+        System.out.println("The elements are:");
+        for (int num : array) {
+            System.out.println(num);  
+        }
+
+        x.close();
+    }
+}
