@@ -1,0 +1,57 @@
+import java.util.*;
+
+class main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of seats: ");
+        int size = sc.nextInt(); sc.nextLine();
+
+        String[] seats = new String[size];
+        String[] names = new String[size];
+
+        while (true) {
+            System.out.println("\n1.Book Seats  2.Update Name");
+            System.out.print("Enter choice: ");
+            int ch = sc.nextInt(); sc.nextLine();
+
+            switch (ch) {
+                case 1:
+                    for (int i = 0; i < size; i++) {
+                        System.out.print("Enter seat number (e.g., A" + (i + 1) + "): ");
+                        seats[i] = sc.nextLine();
+                        System.out.print("Enter person name: ");
+                        names[i] = sc.nextLine();
+                    }
+                    System.out.println("\n--- Seat Assignments ---");
+                    for (int i = 0; i < size; i++) {
+                        System.out.println("Seat " + seats[i] + " is assigned to " + names[i]);
+                    }
+                    break;
+
+                case 2:
+                    System.out.print("Enter seat number to update: ");
+                    String seatToUpdate = sc.nextLine();
+                    boolean found = false;
+                    for (int i = 0; i < size; i++) {
+                        if (seats[i].equalsIgnoreCase(seatToUpdate)) {
+                            System.out.print("Enter new name: ");
+                            names[i] = sc.nextLine();
+                            System.out.println("Seat " + seats[i] + " updated to " + names[i]);
+                            System.out.println("\n--- Updated Seat Assignments ---");
+                            for (int j = 0; j < size; j++) {
+                                System.out.println("Seat " + seats[j] + " is assigned to " + names[j]);
+                            }
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found) System.out.println("Seat not found!");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice!");
+            }
+        }
+    }
+}
