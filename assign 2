@@ -1,0 +1,122 @@
+// 1)Data type:
+    A data type defines the type of data variable can hold.the determine the size and range of values it can store.
+there are 8 types:
+boolean-8bits(range:true or false)
+short-16bits(range:-128 to 127)
+integer-32bits
+float-32bits
+long-64bits
+double-64bits
+
+//variable:
+     Java supports three types of variables: local variables, instance variables, and class variables. This section will discuss the placement and scope of variables within a Java class.
+The following code shows the differences between variable types.
+
+syntax:
+  Datatype variablename = value
+code:
+ class Main {
+    public static void main(String[] args) {
+int  x =18;
+int  y = 22;
+        if (x<y)
+        {
+System.out.println("eligible");
+
+        }
+           else
+           {
+System.out.println("not eligible");
+           }
+    }
+}
+
+main:
+This is a specific reverse method name that the JVM recoganize that the starting for program execution.
+void:
+This indicate that the main  functiondoesnot return any values.
+static:
+the static keyword allows the main method to be call without creating an instant class that belongs too.
+public:It is access specifirs also access modifier ensure  the JVM can access and execute the main method from outside the class.
+
+operators:
+1.arithmetic [+,-,*,%,++,--,/]
+2.relational [==,!=,<,>,<=,>=]
+3.logical[&&,//]
+4.assignment[==]
+5.bitwise
+
+local&global(class) variable:
+local:
+  it itergrate within the method
+global:
+  the class variable it itergrate within the class.
+
+                               day2
+   default value:
+   1. byte=0
+  2.short=0
+  3.int=0
+  4.long=0
+  5.float=0
+  6.double=0
+  7.character=null
+
+swich case:
+  it allows a choice from a number of options.it will test a number of cas against a variable.
+syntax:
+switch(){
+  case 1:
+    //code
+break;
+ case 2:
+    //code
+break;
+ case 3:
+    //code
+break;
+deafult:
+break;
+}
+loop:
+  iteration or loop statement are used to set up and hanmdle process that must be repeated.while,dowhile,for loop.
+
+1.do while:
+   Because the condition ios checked first in a while loop may never execute.
+syntax:
+   do
+   {
+    //loop block
+}while(boolean expression);
+
+2.for loop:
+for(initial condition;booleanexpression;iteration)
+{
+//loop block
+}
+works:
+ 1.	The initial condition statement (the first portion in parentheses) is executed.
+ 2.	The boolean expression (the second portion in parentheses) is tested to see if it is true. If so, the body of the loop is executed, if it is false, the for loop is exited.
+ 3.	The iteration statement (the third portion in the parentheses) is executed. It returns to Step 2 and continues until the loop is exited.
+
+3.while loop:
+The while loop checks a condition before entering the loop, then executes the loop block if the condition is true.
+The condition must be a boolean expression contained in parentheses like the if statement.
+syntax:
+while (boolean_expression)
+{
+    // loop block
+}
+
+4.nested loop:
+Nested loops (break and continue)
+The break statement was introduced with the switch statement in order to keep multiple cases from executing. You can prematurely end other control blocks such as a loop by executing a break statement.  
+Because you do not want the loop to end each time, the break statement is placed inside a conditional statement (if).
+
+for (int countDown = 10; countDown>= 0; countDown--)
+{
+System.out.println(countDown);     if (countDown == 3)
+    {
+System.out.println("ABORT");         break;
+    }
+}
