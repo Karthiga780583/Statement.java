@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner data = new Scanner(System.in);
+
+        System.out.println("Enter the starting number:");
+        int SN = data.nextInt();
+
+        System.out.println("Enter the ending number:");
+        int EN = data.nextInt();
+
+        int RN = SN + (int)(Math.random() * (EN - SN + 1));
+        System.out.println("Random number:"  + RN);
+
+        data.close(); 
+    }
+}
