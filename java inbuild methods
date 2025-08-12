@@ -1,0 +1,136 @@
+Compareto()
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String data = x.nextLine();
+
+        System.out.println("charAt(): " + data.charAt(0));
+        System.out.println("codePointAt(): " + data.codePointAt(0));
+    }
+}
+
+2.compareToIgnoreCase
+  import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter string 1:");
+        String str1 = x.nextLine();
+        System.out.println("Enter string 2:");
+        String str2 = x.nextLine();
+
+        System.out.println(str1.compareToIgnoreCase(str2));
+    }
+}
+
+3.concat
+  import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter string 1:");
+        String str1 = x.nextLine();
+        System.out.println("Enter string 2:");
+        String str2 = x.nextLine();
+
+        System.out.println(str1.concat(str2));
+    }
+}
+
+4.copyValueOf()
+  import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        char[] data = {'H', 'E', 'L', 'L', 'O'};
+        String str = String.copyValueOf(data, 0, 5);
+        System.out.println(str);
+    }
+}
+
+5.content equals()
+  class Main {
+    public static void main(String[] args) {
+        char[] data = {'H', 'E', 'L', 'L', 'O'};
+        String str = String.valueOf(data);
+        String str2 = "HELLO";
+
+        System.out.println(str.contentEquals(str2));
+    }
+}
+6.getchars()
+  import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        
+        char[] data = {'9', '1', '9', '0', '4','5','6','7','8'};
+    
+    
+        System.out.println(data);
+        
+        String mystring ="karthiga";
+        mystring.getChars(0,5,data,4);
+        
+        System.out.println(data);
+    
+    }
+}
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
