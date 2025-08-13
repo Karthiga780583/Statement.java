@@ -1,0 +1,208 @@
+1.matches
+class Main {
+    public static void main(String[] args) {
+        String a="new world";
+        String y="hello_world";
+        String x="hello|world|java";
+        
+        System.out.println("hello".matches(x));
+        System.out.println("world".matches(x));
+        System.out.println("javascript".matches(x));
+        System.out.println(y.regionMatches(7,a,4,5));
+    }
+}
+
+2.replace
+class Main {
+    public static void main(String[] args) {
+        String x = "hello";
+        String y = "hello jack hello";
+
+      
+        System.out.println(x.replace("e", "p")); 
+
+        String a = "(?)Hello";
+        System.out.println(a.replace("(?)Hello", "Hi"));
+        String b = "hello";
+        System.out.println(y.replaceFirst(b, "Hi")); 
+    }
+}
+
+3.split
+class Main {
+    public static void main(String[] args) {
+        String x = "hello world";
+        String y = "\\s"; 
+        String[] z = x.split(y);
+        for (String s : z) {
+            System.out.println(s);
+        }
+    }
+
+    user input:
+    import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String x = sc.nextLine(); 
+
+        String y = "\\s"; 
+        String[] z = x.split(y);
+
+        for (String s : z) {
+            System.out.println(s);
+        }
+
+        sc.close();
+    }
+}
+
+4.replace,replace all,spli,concat
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        String str = x.nextLine();
+
+        System.out.println("Replace 'a' with 'b': " + str.replace("a", "b"));
+        System.out.println("Replace all 'l' with 'x': " + str.replaceAll("l", "x"));
+        String[] words = str.split(" ");
+        System.out.println("Split result:");
+        for (String word : words) {
+            System.out.println(word);
+        }
+        System.out.println("Concat with ' Java': " + str.concat(" Java"));
+    }
+}
+
+5.starts with
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        String x = "Hello";
+        System.out.println(x.startsWith("Hello")); 
+        System.out.println(x.startsWith("He")); 
+    }
+}
+
+6.substring
+public class AddSpaceBetweenWords {
+    public static void main(String[] args) {
+        String name = "karthiga";
+
+        // Using substring() to split and add space
+        String modified = name.substring(0, 8) + " " + name.substring(8);
+
+        System.out.println("Original: " + name);
+        System.out.println("Modified: " + modified);
+    }
+}
+}
+
+7.split and substring
+public class Main {
+    public static void main(String[] args) {
+        String email = "sujithra@gmail.com";
+        
+        
+     
+           String username1 = email.split("@")[0];
+        System.out.println("Using split(): " + username1);
+        
+        int atIndex = email.indexOf('@');
+        String username2 = (atIndex != -1) ? email.substring(0, atIndex) : email;
+        System.out.println("Using substring(): " + username2);
+    }
+}
+
+8.toLowercase
+import java.util.Scanner;
+public class LowerCase {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+        String Lower = input.toLowerCase();
+        System.out.println("Lowercase: " + Lower);
+        scanner.close();
+    }
+}
+9.toUppercase
+import java.util.Scanner;
+public class UpperCase {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+        String Upper = input.toLowerCase();
+        System.out.println("Uppercase: " + Upper);
+        scanner.close();
+    }
+}
+
+10.trim
+public class Trim {
+    public static void main(String[] args) {
+        String strWithSpaces = "   icecream, chocolate!   ";
+        System.out.println("Before trim: [" + strWithSpaces + "]");
+        String trimmedStr = strWithSpaces.trim();
+        System.out.println("After trim:  [" + trimmedStr + "]");
+    }
+}
+copy
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
