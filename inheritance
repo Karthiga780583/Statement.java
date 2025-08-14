@@ -1,0 +1,173 @@
+1.multi level
+import java.util.Scanner;
+
+class Vehicle {
+    Vehicle() {
+        System.out.println("vehicle");
+    }
+}
+
+class FourWheeler extends Vehicle {
+    FourWheeler() {
+        System.out.println("this is a fourwheeler");
+    }
+}
+
+class Cars extends FourWheeler {
+    Cars() {
+        System.out.println("this is aadi");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Cars obj = new Cars();
+
+      
+    }
+}
+
+2.hierarchical
+class Vehicle{
+    Vehicle(){
+        System.out.println("This is a vehicle");
+    }
+}
+class Car extends Vehicle{
+    Car(){
+        Sytem.out.println("This is a car");
+    }
+}
+class Bus extends Vehicle{
+    Bus(){
+        System.out.println("This is a Bus");
+    }
+}
+public class Main{
+    public static void main(String[]args){
+        Car obj1=new Car();
+        Bus obj2=new Bus();
+    }
+}
+
+3.
+import java.util.Scanner;
+
+class Grandparents{
+    Grandparents() {
+        System.out.println("thaatha");
+    }
+}
+
+class Cousins extends Grandparents{
+    Cousins() {
+        System.out.println("cousin");
+    }
+}
+
+class  Daughter  extends Grandparents{
+    Daughter() {
+        System.out.println("this is kaviya");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter  Daughter:");
+         String Daughter = sc.nextLine();
+         Daughter obj1 = new Daughter();
+        
+        System.out.println("Enter  Cousins");
+         String Cousins = sc.nextLine();
+         Cousins obj2 = new Cousins();
+
+        
+        
+        
+       
+
+      
+    }
+}
+        
+  
+4.multi level inheritance
+import java.util.Scanner;
+
+class Grandparents{
+    Grandparents() {
+        System.out.println("thaatha");
+    }
+}
+
+class Cousins extends Grandparents{
+    Cousins() {
+        System.out.println("cousin");
+    }
+}
+
+class  Daughter  extends Grandparents{
+    Daughter() {
+        System.out.println("this is kaviya");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter  Daughter:");
+         String Daughter = sc.nextLine();
+         Daughter obj1 = new Daughter();
+        
+        System.out.println("Enter  Cousins");
+         String Cousins = sc.nextLine();
+         Cousins obj2 = new Cousins();
+
+        
+        
+        
+       
+
+      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
