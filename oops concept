@@ -1,0 +1,341 @@
+class 
+syntax:
+  public class Main{
+  modifier keyword classname
+
+// block of code;
+
+}
+class class2{
+}
+
+if the class name will be private we cant access the class main into class2 .
+
+ syntax for object:
+          
+class Main {
+    int x=5;
+    public static void main(String[] args) {
+        Main obj=new Main();
+        System.out.println(obj.x);
+    }
+}
+
+output:
+   5
+object program:
+      class Person {
+    String name;
+    int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{name:'" + name + "', age:" + age + "}";
+    }
+
+    public static void main(String[] args) {
+        Person p1 = new Person("Kaviya", 21);
+        System.out.println(p1);
+    }
+}
+output:
+   Person{name:'Kaviya', age:21}
+
+=== Code Execution Successful ===
+
+
+class cars{
+    void sound(){
+        System.out.println("cars makes a sound");
+        
+    }
+}
+
+
+class bmw extends cars{
+    void sound(){
+        System.out.println("bmw");
+    }
+}
+class Aadi extends cars{
+    void sound(){
+        System.out.println("Aadi");
+    }
+}
+class benz extends cars{
+    void sound(){
+        System.out.println("benz");
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        
+    cars a;
+    
+    a=new bmw();
+    a.sound();
+    
+    a=new Aadi();
+    a.sound();
+    
+    a=new benz();
+    a.sound();
+    
+    
+        
+    }
+}
+
+output:
+   bmw
+Aadi
+benz
+
+=== Code Execution Successful ===
+
+
+family deatails:
+      import java.util.Scanner;
+
+class Family {
+    String name;
+    void sound() {
+        System.out.println("Family sound");
+    }
+}
+
+class Grandpa extends Family {
+    void sound() {
+        System.out.println("Grandpa sound");
+    }
+}
+
+class Grandma extends Family {
+    void sound() {
+        System.out.println("Grandma sound");
+    }
+}
+
+class Mother extends Family {
+    void sound() {
+        System.out.println("Mother sound");
+    }
+}
+
+class Father extends Family {
+    void sound() {
+        System.out.println("Father sound");
+    }
+}
+
+class Child extends Family {
+    String house;
+    String hobby;
+
+    void tellStory() {
+        System.out.println("Child tells a story about family.");
+    }
+
+    void work() {
+        System.out.println("Child helps at home.");
+    }
+
+    void study() {
+        System.out.println("Child studies hard.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+       
+        Family family = new Family();
+        Grandpa grandpa = new Grandpa();
+        Grandma grandma = new Grandma();
+        Mother mother = new Mother();
+        Father father = new Father();
+        Child child = new Child();
+
+    
+        System.out.print("Enter family name: ");
+        family.name = sc.nextLine();
+
+        System.out.print("Enter grandpa name: ");
+        grandpa.name = sc.nextLine();
+
+        System.out.print("Enter grandma name: ");
+        grandma.name = sc.nextLine();
+
+        System.out.print("Enter mother name: ");
+        mother.name = sc.nextLine();
+
+        System.out.print("Enter father name: ");
+        father.name = sc.nextLine();
+
+        System.out.print("Enter child name: ");
+        child.name = sc.nextLine();
+
+       
+       
+        System.out.println("Family Name: " + family.name);
+        System.out.println("Grandpa: " + grandpa.name);
+        System.out.println("Grandma: " + grandma.name);
+        System.out.println("Mother: " + mother.name);
+        System.out.println("Father: " + father.name);
+        System.out.println("Child: " + child.name);
+
+        sc.close();
+    }
+}
+
+output:
+   Enter family name: azhagi
+Enter grandpa name: karuppaiya
+Enter grandma name: azhagi
+Enter mother name: indira
+Enter father name: nagarajan
+Enter child name: kaviya
+Family Name: azhagi
+Grandpa: karuppaiya
+Grandma: azhagi
+Mother: indira
+Father: nagarajan
+Child: kaviya
+
+=== Code Execution Successful ===
+
+
+single  inheritence:
+   import java.util.Scanner;
+class parents{
+    String name;
+    void sound(){
+        System.out.println("mom and dad");
+        
+    }
+}
+
+
+class daughter extends parents{
+    void sound(){
+        System.out.println("kaviya");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        
+       
+      
+    daughter daughter=new daughter();
+
+    
+        System.out.print("Enter daughter name: ");
+        daughter.name = sc.nextLine();
+
+    
+    
+        
+    }
+}
+output:
+   Enter daughter name: kaviya
+
+
+multilevel inheritance:
+   import java.util.Scanner;
+
+class grandparents{
+    grandparents() {
+        System.out.println("thaatha");
+    }
+}
+
+class cousins extends grandparents{
+    cousins() {
+        System.out.println("cousin");
+    }
+}
+
+class  daughter  extends cousins{
+    daughter() {
+        System.out.println("this is kaviya");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        daughter obj = new daughter();
+
+      
+    }
+}
+
+output:
+   thaatha
+cousin
+this is kaviya
+
+=== Code Execution Successful ===
+
+heirarical inheritance:
+    import java.util.Scanner;
+
+class Grandparents{
+    Grandparents() {
+        System.out.println("thaatha");
+    }
+}
+
+class Cousins extends Grandparents{
+    Cousins() {
+        System.out.println("cousin");
+    }
+}
+
+class  Daughter  extends Grandparents{
+    Daughter() {
+        System.out.println("this is kaviya");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter  Daughter:");
+         String Daughter = sc.nextLine();
+         Daughter obj1 = new Daughter();
+        
+        System.out.println("Enter  Cousins");
+         String Cousins = sc.nextLine();
+         Cousins obj2 = new Cousins();
+
+        
+        
+        
+       
+
+      
+    }
+}
+
+output:
+   Enter  Daughter:
+kaviya
+thaatha
+this is kaviya
+Enter  Cousins
+male
+thaatha
+cousin
+
+=== Code Execution Successful ===
